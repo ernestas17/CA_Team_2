@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // Components
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 // Pages
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 }
