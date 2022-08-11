@@ -1,13 +1,40 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: calc(100vw - (100vw - 100%));
+  font-family: Manrope;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope') url('./assets/fonts/Manrope.ttf') format('truetype');
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --primary: #ff6433;
+  --secondary: #661ce7;
+  --mint: #00d289;
+  --steelgrey: #e2e6e9;
+  --lightgrey: #f2f2f2;
+  --white: white;
+  --black: black;
+
+  --heading1: 4em;
+  --heading2: 3.6em;
+  --heading3: 3em;
+  --heading4: 2.5em;
+  --heading5: 2em;
+  --heading6: 1.25em;
+
+  --title1: 2em;
+  --title2: 1.5em;
+
+  --paragraph1: 1.13em;
+  --paragraph2: 1em;
+  --caption: 0.75em;
 }
