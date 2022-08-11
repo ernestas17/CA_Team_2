@@ -1,10 +1,10 @@
-import { StyledCardWrapper } from './Card.styled';
+import { StyledCardWrapper, StyledCardTextWrapper } from './Card.styled';
 
 const Card = ({ icon, text }) => {
   return (
     <StyledCardWrapper>
       {icon}
-      <div>{text}</div>
+      <StyledCardTextWrapper>{text}</StyledCardTextWrapper>
     </StyledCardWrapper>
   );
 };
