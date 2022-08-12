@@ -8,13 +8,10 @@ import {
   StyledHeaderAssistance,
   StyledHeaderMenuWrapper,
 } from './Header.styled';
-
-import {
-  AssistanceIcon,
-  HamburgerMenuIcon,
-  LogoIcon,
-  XMarkIcon,
-} from '../../assets/icons/icons';
+import logo from '../../assets/logo.svg';
+import assistanceIcon from '../../assets/icons/assistanceIcon.svg';
+import hamburgericon from '../../assets/icons/hamburgericon.svg';
+import xmarkIcon from '../../assets/icons/xmarkIcon.svg';
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +19,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledHeaderWrapper>
-        <LogoIcon />
+        <Link to={'/'}>
+          <img src={logo} alt="logo" />
+        </Link>
 
         <StyledHeaderMenuWrapper>
           <div>
@@ -46,7 +45,7 @@ const Header = () => {
           </div>
           <StyledHeaderAssistance>
             <div className="icon-container">
-              <AssistanceIcon />
+              <img src={assistanceIcon} alt="assistance-icon" />
             </div>
             <div>
               <p className="grey-text">Road Assistance</p>
@@ -54,7 +53,11 @@ const Header = () => {
             </div>
           </StyledHeaderAssistance>
           <div className="mobile-menu" onClick={() => setIsMobile(!isMobile)}>
-            {isMobile ? <XMarkIcon /> : <HamburgerMenuIcon />}
+            {isMobile ? (
+              <img src={xmarkIcon} alt="x-mark-icon" />
+            ) : (
+              <img src={hamburgericon} alt="hamburger-icon" />
+            )}
           </div>
         </StyledHeaderMenuWrapper>
       </StyledHeaderWrapper>
