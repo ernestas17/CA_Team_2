@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoWhite from '../../../../assets/logoWhite.svg';
 
 import {
   StyledFooterBottom,
@@ -9,12 +8,14 @@ import {
   StyledFooterBottomWrapper,
 } from './FooterBottom.style';
 
+import { LogoWhite } from '../../../../assets/icons/icons';
+
 const FooterBottom = () => {
   return (
     <StyledFooterBottomWrapper>
       <StyledFooterBottom>
         <StyledFooterBottomLogoContainer>
-          <img src={logoWhite} alt="logo" />
+          <LogoWhite />
         </StyledFooterBottomLogoContainer>
         <StyledFooterNavigation>
           <ul>

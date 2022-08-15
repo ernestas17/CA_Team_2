@@ -1,10 +1,5 @@
 import React from 'react';
 
-import fb from '../../../../assets/icons/fb.svg';
-import twitter from '../../../../assets/icons/twitter.svg';
-import ig from '../../../../assets/icons/ig.svg';
-import lin from '../../../../assets/icons/lin.svg';
-
 import {
   StyledFooterTop,
   StyledFooterTopLeft,
@@ -14,6 +9,13 @@ import {
   StyledFooterTopWrapper,
 } from './FooterTop.style';
 
+import {
+  InstagramIcon,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedInIcon,
+} from '../../../../assets/icons/icons';
+
 const FooterTop = ({ display }) => {
   return (
     <StyledFooterTopWrapper>
@@ -21,10 +23,10 @@ const FooterTop = ({ display }) => {
         <StyledFooterTopLeft>
           <h3>Get in touch with us for your service</h3>
           <StyledFooterLeftSocialIcons>
-            <img src={fb} alt="facebook" />
-            <img src={twitter} alt="twitter" />
-            <img src={ig} alt="instagram" />
-            <img src={lin} alt="linkedIn" />
+            <FacebookIcon />
+            <TwitterIcon />
+            <InstagramIcon />
+            <LinkedInIcon />
           </StyledFooterLeftSocialIcons>
         </StyledFooterTopLeft>
         <StyledFooterTopRight>

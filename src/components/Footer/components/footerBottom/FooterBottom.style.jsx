@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../shared/constant/breakpoints';
 
 export const StyledFooterBottomWrapper = styled.div`
   background-color: #1e1b1b;
@@ -16,11 +17,11 @@ export const StyledFooterBottom = styled.div`
     margin-bottom: 30px;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     justify-content: center;
   }
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
     justify-content: space-between;
     max-width: 1280px;
@@ -44,11 +45,11 @@ export const StyledFooterBottomLogoContainer = styled.div`
     height: 27px;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     width: 30%;
   }
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     justify-content: flex-start;
     width: 18%;
     margin-top: 0;
@@ -71,7 +72,7 @@ export const StyledFooterNavigation = styled.div`
     color: white;
   }
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     width: 35%;
     margin-top: 0;
 
