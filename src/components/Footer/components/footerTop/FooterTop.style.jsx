@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../shared/constant/breakpoints';
 
 export const StyledFooterTopWrapper = styled.div`
   background-color: var(--dark);
   opacity: 0.98;
   padding-bottom: 50px;
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding-bottom: 0;
   }
 `;
@@ -19,13 +20,13 @@ export const StyledFooterTop = styled.div`
   margin: 0 auto;
   padding-top: 50px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: start;
   }
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     max-width: 1280px;
     height: 550px;
     padding-top: 130px;
@@ -46,7 +47,7 @@ export const StyledFooterTopLeft = styled.div`
     align-self: center;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     width: 50%;
     margin-bottom: 0px;
     text-align: start;
@@ -59,7 +60,7 @@ export const StyledFooterTopLeft = styled.div`
     }
   }
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     h3 {
       font-size: var(--heading3);
     }
@@ -75,12 +76,12 @@ export const StyledFooterLeftSocialIcons = styled.div`
     width: 24px;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     justify-content: start;
     gap: 10%;
   }
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     gap: 4%;
   }
 `;
@@ -90,11 +91,11 @@ export const StyledFooterTopRight = styled.div`
   flex-direction: column;
   gap: 32px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     width: 50%;
   }
 
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     width: 50%;
   }
 `;
