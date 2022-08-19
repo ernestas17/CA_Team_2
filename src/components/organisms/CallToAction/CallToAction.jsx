@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from '../Button/Button';
+import Button from '../../atoms/Button/Button';
 import {
   StyledCTABgOne,
   StyledCTABgTwo,
   StyledCTAContainer,
   StyledCTAWrapper,
-} from '../CallToAction/CallToAction.style';
+} from './CallToAction.style';
 
 const CallToAction = () => {
   const loadContactPage = useNavigate();
