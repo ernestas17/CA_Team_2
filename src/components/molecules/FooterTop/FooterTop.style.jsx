@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../shared/constant/breakpoints';
+import BREAKPOINTS from '../../../shared/constant/breakpoints';
 
 export const StyledFooterTopWrapper = styled.div`
   background-color: var(--dark);
@@ -12,7 +12,7 @@ export const StyledFooterTopWrapper = styled.div`
 `;
 
 export const StyledFooterTop = styled.div`
-  display: ${(props) => (props.display === 'none' ? props.display : 'flex')};
+  display: flex;
   flex-direction: column;
   align-items: center;
 

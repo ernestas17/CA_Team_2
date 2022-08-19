@@ -14,12 +14,12 @@ import {
   FacebookIcon,
   TwitterIcon,
   LinkedInIcon,
-} from '../../../../assets/icons/icons';
+} from '../../../assets/icons/icons';
 
 const FooterTop = ({ display }) => {
   return (
     <StyledFooterTopWrapper>
-      <StyledFooterTop display={display}>
+      <StyledFooterTop>
         <StyledFooterTopLeft>
           <h3>Get in touch with us for your service</h3>
           <StyledFooterLeftSocialIcons>
@@ -31,7 +31,7 @@ const FooterTop = ({ display }) => {
         </StyledFooterTopLeft>
         <StyledFooterTopRight>
           <StyledFooterTopRightList>
-            <li>Help line Noumber</li>
+            <li>Help line Number</li>
             <p>1800 265 24 52</p>
           </StyledFooterTopRightList>
           <StyledFooterTopRightList>
