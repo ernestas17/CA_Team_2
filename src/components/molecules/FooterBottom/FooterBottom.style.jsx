@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../shared/constant/breakpoints';
+import BREAKPOINTS from '../../../shared/constant/breakpoints';
 
 export const StyledFooterBottomWrapper = styled.div`
   background-color: #1e1b1b;

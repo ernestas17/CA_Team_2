@@ -8,14 +8,14 @@ import {
   StyledFooterBottomWrapper,
 } from './FooterBottom.style';
 
-import { LogoWhite } from '../../../../assets/icons/icons';
+import { LogoIcon } from '../../../assets/icons/icons';
 
 const FooterBottom = () => {
   return (
     <StyledFooterBottomWrapper>
       <StyledFooterBottom>
         <StyledFooterBottomLogoContainer>
-          <LogoWhite />
+          <LogoIcon fill="white" />
         </StyledFooterBottomLogoContainer>
         <StyledFooterNavigation>
           <ul>
