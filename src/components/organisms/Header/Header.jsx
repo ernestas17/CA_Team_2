@@ -14,7 +14,7 @@ import {
   HamburgerMenuIcon,
   LogoIcon,
   XMarkIcon,
-} from '../../assets/icons/icons';
+} from '../../../assets/icons/icons';
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
