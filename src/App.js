@@ -3,8 +3,8 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // Components
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/organisms/Header';
+import Footer from './components/organisms/Footer';
 
 // Pages
 const HomePage = lazy(() => import('./pages/HomePage'));
