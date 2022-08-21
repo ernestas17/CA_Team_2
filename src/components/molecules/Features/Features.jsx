@@ -6,12 +6,12 @@ import {
   DollarIcon,
 } from '../../../assets/icons/icons';
 
-const Features = () => {
+const Features = ({ bgColor }) => {
   return (
     <StyledFeatures>
       <Feature
         icon={<ServiceIcon />}
-        bgColor="white"
+        bgColor={bgColor}
         headline={'Convenient service'}
         text={
           'Through True Rich Attended does no end it his mother since real had half every him.'
@@ -19,7 +19,7 @@ const Features = () => {
       />
       <Feature
         icon={<MechanicIcon />}
-        bgColor="white"
+        bgColor={bgColor}
         headline={'Expert mechanics'}
         text={
           'Through True Rich Attended does no end it his mother since real had half every him.'
@@ -27,7 +27,7 @@ const Features = () => {
       />
       <Feature
         icon={<DollarIcon />}
-        bgColor="white"
+        bgColor={bgColor}
         headline={'Transparent pricing'}
         text={
           'Through True Rich Attended does no end it his mother since real had half every him.'

@@ -22,6 +22,7 @@ export const StyledIcon = styled.div`
 
 export const StyledText = styled.div`
   width: 80%;
+  line-height: 28px;
   h5 {
     font-size: var(--title2);
     padding-bottom: 10px;
