@@ -1,4 +1,4 @@
-import Button from '../Button/Button';
+import ArrowButton from '../ArrowButton/ArrowButton';
 import {
   StyledServiceDetailsCardWrapper,
   StyledTextContainer,
@@ -12,7 +12,11 @@ const ServiceDetailsCard = ({ image, heading, cardText, text }) => {
         <h3>{heading}</h3>
         <p>{cardText}</p>
       </StyledTextContainer>
-      <Button text={text} />
+      <ArrowButton
+        text="See service details"
+        path={'/service-single'}
+        hoverColor="secondary"
+      />
     </StyledServiceDetailsCardWrapper>
   );
 };
