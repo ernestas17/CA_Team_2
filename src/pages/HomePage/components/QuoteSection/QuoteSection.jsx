@@ -16,7 +16,7 @@ const QuoteSection = () => {
         <StyledQuoteSectionLeft>
           <h2>We are taking car servicing seriously</h2>
           <StyledFeaturesContainer>
-            <Features />
+            <Features bgColor="white" />
           </StyledFeaturesContainer>
           <ArrowButton
             text="Know more about us"
