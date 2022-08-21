@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledCardWrapper = styled.div`
-  max-width: 316px;
+  width: 100%;
   height: 232px;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@ export const StyledCardWrapper = styled.div`
   gap: 10px;
   background-color: var(--white);
   cursor: pointer;
+
   :hover {
     background-color: var(--primary);
     color: white;
@@ -19,7 +20,7 @@ export const StyledCardWrapper = styled.div`
   }
 `;
 
-export const StyledCardTextWrapper = styled.div`
+export const StyledCardTextWrapper = styled.span`
   font-size: var(--title2);
   text-align: center;
 `;
