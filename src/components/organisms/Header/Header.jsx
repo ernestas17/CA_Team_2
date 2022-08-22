@@ -3,8 +3,6 @@ import { useState } from 'react';
 import {
   StyledHeader,
   StyledHeaderWrapper,
-  StyledHeaderNavigation,
-  StyledHeaderMenuItem,
   StyledHeaderAssistance,
   StyledHeaderMenuWrapper,
 } from './Header.styled';
@@ -15,46 +13,32 @@ import {
   LogoIcon,
   XMarkIcon,
 } from '../../../assets/icons/icons';
+import Navigation from '../../atoms/Navigation/Navigation';
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <StyledHeader>
       <StyledHeaderWrapper>
-        <LogoIcon />
-
+        <Link to={'/'}>
+          <LogoIcon />
+        </Link>
         <StyledHeaderMenuWrapper>
           <div>
-            <StyledHeaderNavigation>
-              <StyledHeaderMenuItem>
-                <Link to={'/'}>Home</Link>
-              </StyledHeaderMenuItem>
-              <StyledHeaderMenuItem>
-                <Link to={'/about'}>About us</Link>
-              </StyledHeaderMenuItem>
-              <StyledHeaderMenuItem>
-                <Link to={'/services'}>Services</Link>
-              </StyledHeaderMenuItem>
-              <StyledHeaderMenuItem>
-                <Link to={'/blog'}>Blog</Link>
-              </StyledHeaderMenuItem>
-              <StyledHeaderMenuItem>
-                <Link to={'/contact'}>Contact</Link>
-              </StyledHeaderMenuItem>
-            </StyledHeaderNavigation>
+            <Navigation />
           </div>
           <StyledHeaderAssistance>
             <div className="icon-container">
               <AssistanceIcon />
             </div>
             <div>
-              <p className="grey-text">Road Assistance</p>
+              <span>Road Assistance</span>
               <p>1800 265 24 52</p>
             </div>
           </StyledHeaderAssistance>
-          <div className="mobile-menu" onClick={() => setIsMobile(!isMobile)}>
-            {isMobile ? <XMarkIcon /> : <HamburgerMenuIcon />}
+          <div className="mobile-menu" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <XMarkIcon /> : <HamburgerMenuIcon />}
           </div>
         </StyledHeaderMenuWrapper>
       </StyledHeaderWrapper>

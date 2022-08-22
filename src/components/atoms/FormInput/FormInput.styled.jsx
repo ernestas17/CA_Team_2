@@ -9,5 +9,9 @@ export const StyledInputWrapper = styled.div`
     border-radius: 2px;
     border: none;
     outline: none;
+
+    background-color: var(
+      --${(props) => (props.color === 'lightgrey' ? 'lightgrey' : 'white')}
+    );
   }
 `;
