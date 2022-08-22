@@ -27,7 +27,7 @@ const QuoteSection = () => {
         <StyledQuoteSectionRight>
           <Form
             heading="Get a quote for the car service"
-            bgColor="primary"
+            btnColor="primary"
             text="Get your quote"
             inputs={[
               { id: 1, type: 'text', placeholder: 'Enter your location' },
