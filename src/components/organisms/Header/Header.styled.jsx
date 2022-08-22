@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../shared/constant/breakpoints';
 
 export const StyledHeader = styled.header`
   height: 90px;
@@ -13,64 +14,41 @@ export const StyledHeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: var(--white);
+
+  a {
+    font-size: var(--paragraph1);
+    color: var(--black);
+    text-decoration: none;
+  }
 `;
 
 export const StyledHeaderMenuWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 
   .mobile-menu {
-    img {
-      width: 40px;
-    }
+    display: flex;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     .mobile-menu {
       display: none;
     }
   }
-`;
 
-export const StyledHeaderNavigation = styled.ul`
-  display: none;
-
-  @media (min-width: 768px) {
-    display: flex;
-    gap: 20px;
-  }
-  @media (min-width: 1080px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     gap: 40px;
-  }
-`;
-
-export const StyledHeaderMenuItem = styled.li`
-  list-style: none;
-  font-size: var(--paragraph2);
-
-  a {
-    text-decoration: none;
-    color: var(--black);
-    cursor: pointer;
-  }
-
-  a:hover {
-    opacity: 0.6;
   }
 `;
 
 export const StyledHeaderAssistance = styled.div`
   display: none;
 
-  @media (min-width: 768px) {
-    border-left: 1px solid var(--steelgrey);
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-left: 35px;
-    text-align: center;
-    font-size: var(--paragraph2);
     color: var(--black);
 
     .icon-container {
@@ -78,11 +56,20 @@ export const StyledHeaderAssistance = styled.div`
       align-items: center;
     }
 
-    .grey-text {
-      font-size: var(--caption);
+    p {
+      font-size: var(--paragraph1);
+    }
+
+    span {
+      font-size: 14px;
       letter-spacing: 1.1px;
       line-height: 22px;
       opacity: 0.7;
     }
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    border-left: 1px solid var(--steelgrey);
+    padding-left: 35px;
   }
 `;
